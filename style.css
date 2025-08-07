@@ -1,0 +1,76 @@
+:root {
+      --cor-bg: #1e1e2f;
+      --cor-texto: #f1f1f1;
+      --cor-input: #393953;
+      --cor-botao: #5a8dee;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: var(--cor-bg);
+      color: var(--cor-texto);
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    input, select, textarea {
+      background-color: var(--cor-input);
+      color: var(--cor-texto);
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      background-color: var(--cor-botao);
+      color: white;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #2a2a40;
+      padding: 20px;
+      border-radius: 16px;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .modal-content textarea {
+      height: 200px;
+    }
+
+    .modal-content button {
+      margin-top: 10px;
+      background-color: var(--cor-botao);
+    }

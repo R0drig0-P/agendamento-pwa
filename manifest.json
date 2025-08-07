@@ -1,0 +1,20 @@
+{
+  "name": "Júlio Beauty Spa - Agendamentos",
+  "short_name": "Júlio Beauty",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#FF69B4",
+  "icons": [
+    {
+      "src": "icon-192.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "icon-400.png",
+      "sizes": "400x400",
+      "type": "image/png"
+    }
+  ]
+}

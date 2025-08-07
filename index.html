@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Marcações Estética</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#FF59B4">
+</head>
+
+<body>
+  <h2>Confirmar Marcação</h2>
+
+  <label>Nome:
+    <input type="text" id="nome">
+  </label>
+
+  <label>Serviço:
+    <input type="text" id="servico">
+  </label>
+
+  <label>Data:
+    <input type="date" id="data">
+  </label>
+
+  <label>Hora:
+    <input type="time" id="hora">
+  </label>
+
+  <label>País:
+    <select id="pais">
+      <option value="351">🇵🇹 +351 (Portugal)</option>
+      <option value="55">🇧🇷 +55 (Brasil)</option>
+      <option value="34">🇪🇸 +34 (Espanha)</option>
+      <option value="44">🇬🇧 +44 (UK)</option>
+      <option value="33">🇫🇷 +33 (França)</option>
+    </select>
+  </label>
+
+  <label>Número:
+    <input type="text" id="numero" maxlength="15" placeholder="912 345 678">
+  </label>
+
+  <label>Mensagem personalizada:
+    <textarea id="mensagem" readonly onclick="abrirModal()"></textarea>
+  </label>
+
+  <button onclick="enviarMensagem()">Enviar pelo WhatsApp</button>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="fecharModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <h3>Editar Mensagem</h3>
+      <textarea id="mensagemModal"></textarea>
+      <button onclick="salvarMensagem()">Guardar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
