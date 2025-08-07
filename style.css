@@ -33,7 +33,7 @@ label {
 input, select, textarea, button {
   width: 100%;
   padding: 12px;
-  margin-top: 6px;
+  margin-top: 15px;
   border: none;
   border-radius: 14px;
   font-size: 16px;
@@ -112,3 +112,4 @@ button:hover {
   font-size: 16px;
   border-radius: 12px;
 }
+
