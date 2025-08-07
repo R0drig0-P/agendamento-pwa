@@ -16,6 +16,7 @@ html, body {
   margin: 0;
   height: 100%;
   overflow: hidden;
+  padding-top: 20px;
 }
 
 h2 {
@@ -114,6 +115,7 @@ button:hover {
   font-size: 16px;
   border-radius: 12px;
 }
+
 
 
 
