@@ -16,7 +16,7 @@ html, body {
 }
 
 h2 {
-  margin-top: 4px;
+  margin-top: 10px;
   font-size: 24px;
   text-align: center;
 }
@@ -115,4 +115,5 @@ button {
 .modal-content button:hover {
   background-color: #00a374;
 }
+
 
