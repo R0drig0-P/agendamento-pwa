@@ -27,18 +27,20 @@ h2 {
 
 label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  font-size: 16px;
 }
 
 input, select, textarea, button {
   width: 100%;
-  padding: 12px;
-  margin-top: 15px;
+  padding: 14px;
+  margin-bottom: 18px
   border: none;
   border-radius: 14px;
   font-size: 16px;
   box-sizing: border-box;
 }
+
 
 input, select, textarea {
   background-color: var(--cor-input);
@@ -112,4 +114,5 @@ button:hover {
   font-size: 16px;
   border-radius: 12px;
 }
+
 
