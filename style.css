@@ -1,84 +1,93 @@
 :root {
-      --cor-bg: #1e1e2f;
-      --cor-texto: #f1f1f1;
-      --cor-input: #393953;
-      --cor-botao: #5a8dee;
-    }
+  --cor-bg: #1e1e2f;
+  --cor-texto: #f1f1f1;
+  --cor-input: #393953;
+  --cor-botao: #00c28b;
+  --cor-botao-hover: #00a374;
+  --cor-modal-bg: #1f1f1f;
+  --cor-textarea-bg: #2a2a2a;
+}
 
 html, body {
-    font-family: sans-serif;
-    background-color: var(--cor-bg);
-    color: var(--cor-texto);
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
+  font-family: sans-serif;
+  background-color: var(--cor-bg);
+  color: var(--cor-texto);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 h2 {
-  margin-top: 10px;
+  margin: 0;
+  padding-top: 10px;
   font-size: 24px;
   text-align: center;
 }
 
 label {
-    display: block;
-    margin-bottom: 15px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 input, select, textarea, button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 6px;
-    border: none;
-    border-radius: 12px;
-    font-size: 16px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 input, select, textarea {
-    background-color: var(--cor-input);
-    color: var(--cor-texto);
+  background-color: var(--cor-input);
+  color: var(--cor-texto);
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 button {
-    background-color: var(--cor-botao);
-    color: white;
-    font-weight: bold;
-    margin-top: 20px;
-    cursor: pointer;
+  background-color: var(--cor-botao);
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--cor-botao-hover);
 }
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    padding: 0;
-    box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .modal-content {
-    background-color: #1f1f1f;
-    padding: 20px;
-    border-radius: 20px;
-    width: 90vw;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-    overflow: hidden;
+  background-color: var(--cor-modal-bg);
+  padding: 20px;
+  border-radius: 20px;
+  width: 90vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .modal-content h3 {
@@ -88,32 +97,18 @@ button {
 }
 
 .modal-content textarea {
-    flex: 1;
-    width: 100%;
-    resize: none;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: none;
-    background-color: #2a2a2a;
-    color: white;
-    box-sizing: border-box;
+  flex: 1;
+  background-color: var(--cor-textarea-bg);
+  color: white;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: none;
 }
 
 .modal-content button {
-    margin-top: 15px;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    border-radius: 12px;
-    background-color: #00c28b;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.2s;
+  margin-top: 15px;
+  font-size: 16px;
+  border-radius: 12px;
 }
-
-.modal-content button:hover {
-  background-color: #00a374;
-}
-
-
